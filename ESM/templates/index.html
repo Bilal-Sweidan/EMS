@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <!-- log in window  -->
+    <section id="logInS">
+        <div id="logInD">
+            <img src="/static/user.png" id="loginLogo">
+            <header id="headerLogin">
+                <h1>welcome</h1>
+            </header>
+            <section>
+                <form action="" method="dialog" id="loginForm">
+                    <input type="text" class="username" id="username" placeholder="Username" required><br>
+            
+                    <input type="password" maxlength="15" class="username2" id="password" placeholder="Password" required>
+                    <!-- the photo for show password and hide it-->
+                    <img src="/static/open-eye.ico" id="eye">
+                    <input type="checkbox" id="chackbox" >
+                    <label for="chackbox"> Remember Me </label>
+                    <input type="submit" value="Log in" id="buttonLogin"><br>
+                    <a href="" id="link">Forget Password ?</a>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <!-- account addition window -->
+    <section id="addS">
+        <div id="addD">
+            <img src="/static/user.png" id="loginLogo">
+            <img src="/static/remove.png" id="hideWindowA" class="hideWindow">
+            <header id="headerAdd">
+                <h1 id="addTitle">Adding new account</h1>
+            </header>
+            
+            <section>
+                <form action="" method="dialog" id="loginFormA">
+                    <input type="text" id="Ename" placeholder="Ename" name="Ename"  required><br>
+                    <input type="text"   id="usernameA" minlength="4" maxlength="15" placeholder="Username" name="usernameA" required>
+                    <input type="text"   id="passwordA" minlength="5" maxlength="10" placeholder="Password" name="passwordA" required><br>
+                    <select name="powers" id="powerS">
+                        <option value="Admin">Admin</option>
+                        <option value="Employee">Employee</option>
+                    </select>
+                    <input type="submit" value="ADD" id="addB"><br>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <!-- project addition window -->
+    <section id="addSP">
+        <div id="addDP">
+            <img src="/static/user.png" id="loginLogo">
+            <img src="/static/remove.png" id="hideWindowP" class="hideWindow">
+            <header id="headerAdd">
+                <h1 id="addTitle">Adding new project</h1>
+            </header>
+            <section>
+                <form action="" method="dialog" id="loginForm">
+                    <input type="text" id="Pname" placeholder="project name" name="Pname" required><br>
+                    <textarea name="description" id="description" cols="53" rows="8"></textarea>
+                    <input type="submit" value="ADD" id="addBP"><br>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <!-- projects section  -->
+    <section id="projectsection">
+
+    </section>
+    <!-- End projects section -->
+
+    <!-- emploeey section -->
+    <section id="employeeSection">
+        <div id="timer">00  :   00  :   00</div>
+        <div id="buttons">
+            <button id="startB">Start</button>
+            <button id="stopB">Stop</button>
+            <button id="endB">End</button>
+        </div>
+        <div id="times">
+            <p id="startedTime"></p>
+            <p id="finishingTime"></p>
+        </div>
+    </section>
+    <!--  End employee section   -->
+
+    <!-- Admin section  -->
+    <section id="admin">
+        <header id="adminHeader">
+            <h1 id="class">The employees</h1>
+            <form action="" method="dialog" id="worksForm">
+                <select name="" id="sorting">
+                    <option value="General" selected>General</option>
+                    <option value="According the name">According the name</option>
+                    <option value="According work hours">According work hours</option>
+                    <option value="According the date">According the date</option>
+                </select>
+                <div id="searchDiv">
+                    <input type="search" name="" id="search" placeholder="Search ......">
+                    <input type="submit" value="search" id="Ssubmit">
+                </div>
+            </form>
+        </header>
+
+        <section id="adminTable">
+            <!-- employees table  -->
+            <table id="tableE">
+                <thead id="theadE">
+                    <tr>
+                        <th>Name</th>
+                        <th>Project name</th>
+                        <th>started</th>
+                        <th>finished</th>
+                        <th>work hours</th>
+                        <th>Date</th>
+                        <th>state</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyE">
+
+                </tbody>
+            </table>
+            <!-- account table  -->
+            <table id="tableA">
+                <thead id="theadA">
+                    <tr>
+                        <th>ID</th>
+                        <th>Employee Name</th>
+                        <th>username</th>
+                        <th>password</th>
+                        <th>Powers Of Influence</th>
+                        <th>controler</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyA">
+                    
+                </tbody>
+            </table>
+
+            <!-- projects table  -->
+            <table id="tableP">
+                <thead id="theadP">
+                    <tr>
+                        <th>project name</th>
+                        <th>date creating</th>
+                        <th>description</th>
+                        <th>controler</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyP">
+
+                </tbody>
+            </table>    
+        </section>
+        <!-- controler bar  -->
+        <footer id="adminFooter">
+            <a id="addition">+</a>
+        </footer>
+    </section>
+
+{% endblock %}

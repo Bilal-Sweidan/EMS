@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href="{{url_for('static',filename='css/style.css' )}}"> -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>EMS</title>
+</head>
+<body>
+    <header id="mainheader">
+        <div id="logo">
+            <a> EMS </a>
+        </div>
+        <nav id="headerNav">
+            <a id="logout">Log out</a>
+            <a id="logIn">Log in</a>
+        </nav>
+    </header>
+    {% block body %}
+    
+
+
+    {% endblock %}
+    <!-- <script type="module" src="/static/js/app.js"></script> -->
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
