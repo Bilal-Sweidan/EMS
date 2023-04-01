@@ -1,0 +1,28 @@
+[
+  {
+    "user1": {
+      "employeeName": "bilal",
+      "username": "bilal",
+      "password": "12345",
+      "power": "Admin"
+    },
+    "user2": {
+      "employeeName": "kasem",
+      "username": "kasem@",
+      "password": "123",
+      "power": "Employee"
+    },
+    "user3": {
+      "employeeName": "mustafa",
+      "username": "mustafa@",
+      "password": "zzz",
+      "power": "Employee"
+    },
+    "user4": {
+      "employeeName": "kamal",
+      "username": "kamal@@",
+      "password": "k123",
+      "power": "Employee"
+    }
+  }
+]
